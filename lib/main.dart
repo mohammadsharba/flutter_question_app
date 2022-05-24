@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'questions/questions.dart';
+import 'package:flutter_app/travelApp/_screens/home_s.dart';
+// import 'questions/questions.dart';
 
 main() {
-  runApp(Questions());
+  runApp(MaterialApp(
+    home: HomeS(),
+  ));
 }
