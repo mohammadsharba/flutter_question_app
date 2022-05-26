@@ -9,7 +9,10 @@ class HomeS extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("متجر نوماكوفي"),
+        title: const Text(
+          "متجر نوماكوفي",
+          style: TextStyle(fontFamily: 'Almarai'),
+        ),
       ),
       body: GridView(
         padding: EdgeInsets.all(10.0),
