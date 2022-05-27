@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CategoryDetail extends StatelessWidget {
   const CategoryDetail({key}) : super(key: key);
-
+  static const categoryDetailScreen = '/category-detail-screen';
   @override
   Widget build(BuildContext context) {
     final argument =

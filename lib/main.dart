@@ -33,9 +33,11 @@ main() {
                 fontWeight: FontWeight.bold,
               ),
             )),
-    home: HomeS(),
+    // home: HomeS(),
+    initialRoute: '/',
     routes: <String, WidgetBuilder>{
-      '/category-detail': (context) => CategoryDetail()
+      '/': (context) => HomeS(),
+      CategoryDetail.categoryDetailScreen: (context) => CategoryDetail()
     },
   ));
 }

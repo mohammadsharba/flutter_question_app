@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/travelApp/_screens/category_detail.dart';
 
 class Category extends StatelessWidget {
   final String title;
@@ -6,8 +7,8 @@ class Category extends StatelessWidget {
 
   const Category({Key key, this.title, this.imageUrl}) : super(key: key);
   goToCategoryDetails(BuildContext ctx) {
-    Navigator.of(ctx)
-        .pushNamed('/category-detail', arguments: {'title': title});
+    Navigator.of(ctx).pushNamed(CategoryDetail.categoryDetailScreen,
+        arguments: {'title': title});
   }
 
   @override
