@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/travelApp/_screens/category_detail.dart';
+import 'package:flutter_app/travelApp/_screens/category_detail_screen.dart';
 import 'package:flutter_app/travelApp/_screens/home_s.dart';
+import 'package:flutter_app/travelApp/_screens/item_detail_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 // import 'questions/questions.dart';
 
@@ -37,7 +38,9 @@ main() {
     initialRoute: '/',
     routes: <String, WidgetBuilder>{
       '/': (context) => HomeS(),
-      CategoryDetail.categoryDetailScreen: (context) => CategoryDetail()
+      CategoryDetailScreen.categoryDetailScreen: (context) =>
+          CategoryDetailScreen(),
+      ItemDetailScreen.itemDetailScreen: (context) => ItemDetailScreen()
     },
   ));
 }

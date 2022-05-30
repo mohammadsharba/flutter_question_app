@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/travelApp/_screens/category_detail.dart';
+import 'package:flutter_app/travelApp/_screens/category_detail_screen.dart';
 
-class Category extends StatelessWidget {
+class CategoryItem extends StatelessWidget {
+  final String id;
   final String title;
   final String imageUrl;
 
-  const Category({Key key, this.title, this.imageUrl}) : super(key: key);
+  const CategoryItem({this.id, this.title, this.imageUrl});
   goToCategoryDetails(BuildContext ctx) {
-    Navigator.of(ctx).pushNamed(CategoryDetail.categoryDetailScreen,
-        arguments: {'title': title});
+    Navigator.of(ctx).pushNamed(CategoryDetailScreen.categoryDetailScreen,
+        arguments: {'title': title, 'id': id});
   }
 
   @override

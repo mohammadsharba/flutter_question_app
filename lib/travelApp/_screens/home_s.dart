@@ -23,8 +23,8 @@ class HomeS extends StatelessWidget {
           crossAxisSpacing: 10,
         ),
         children: categories
-            .map((item) => Category(
-                  key: key,
+            .map((item) => CategoryItem(
+                  id: item.id,
                   title: item.title,
                   imageUrl: item.imageUrl,
                 ))
